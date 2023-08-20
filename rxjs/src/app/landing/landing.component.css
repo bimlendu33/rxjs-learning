@@ -1,0 +1,22 @@
+.menu-items-wrapper {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.menu-items-wrapper ul {
+  list-style: none;
+  background-color: rgba(0, 0, 128, 0.88);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.menu-items-wrapper ul:hover {
+  background-color: rgba(0, 0, 128);
+}
+
+.menu-items-wrapper a {
+  text-decoration: none;
+  color: white;
+}
