@@ -8,7 +8,9 @@ import { Subscription, tap, timer } from 'rxjs';
 })
 export class TimerComponent implements OnInit, OnDestroy {
   timerSubs!: Subscription;
-  constructor() {}
+  constructor() {
+    console.log('-----------------------------Timer Operator-----------------------------');
+  }
 
   ngOnInit(): void {
     // timer operator is similar to setInterval, which emits data from 0 to infinite in every N2 seconds, after N1 milliseconds

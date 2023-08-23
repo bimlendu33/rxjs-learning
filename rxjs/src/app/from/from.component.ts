@@ -11,12 +11,11 @@ export class FromComponent implements OnInit, OnDestroy {
   fromTwoSubs!: Subscription;
   fromThreeSubs!: Subscription;
 
-  constructor() {}
+  constructor() {
+    console.log('----------------------------FROM Operator-----------------------------');
+  }
 
   ngOnInit(): void {
-    console.log(
-      '----------------------------FROM OPERATOR-----------------------------'
-    );
     // 'from' operator is used to create observable from iterables
     let fromOneObservable = from(['Angular', 'React', 'JavaScript']);
 

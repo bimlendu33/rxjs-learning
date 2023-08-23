@@ -10,10 +10,11 @@ import { Subscription } from 'rxjs';
 export class PromiseComponent implements OnInit, OnDestroy {
   useSubs!: Subscription;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    console.log('-----------------------PROMISE Operator-----------------------------');
+  }
 
   ngOnInit(): void {
-    console.log('-----------------------PROMISE-----------------------------');
     // fetch returns promise response and we convert it to json first in first then and then collect response
     // using another response with then in json format
     // below is auto promise example as fetch return promise by default

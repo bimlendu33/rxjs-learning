@@ -11,6 +11,14 @@ import { TimerComponent } from './timer/timer.component';
 import { IntervalComponent } from './interval/interval.component';
 import { OfComponent } from './of/of.component';
 import { FromComponent } from './from/from.component';
+import { FromEventComponent } from './from-event/from-event.component';
+import { ToArrayComponent } from './to-array/to-array.component';
+import { MapComponent } from './map/map.component';
+import { TapComponent } from './tap/tap.component';
+import { PluckComponent } from './pluck/pluck.component';
+import { TestComponent } from './test/test.component';
+import { FilterComponent } from './filter/filter.component';
+import { TakeComponent } from './take/take.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +29,15 @@ import { FromComponent } from './from/from.component';
     TimerComponent,
     IntervalComponent,
     OfComponent,
-    FromComponent
+    FromComponent,
+    FromEventComponent,
+    ToArrayComponent,
+    MapComponent,
+    TapComponent,
+    PluckComponent,
+    TestComponent,
+    FilterComponent,
+    TakeComponent
   ],
   imports: [
     BrowserModule,

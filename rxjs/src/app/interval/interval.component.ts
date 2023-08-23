@@ -8,7 +8,9 @@ import { Subscription, interval, tap, timer } from 'rxjs';
 })
 export class IntervalComponent implements OnInit, OnDestroy {
   intervalSubs!: Subscription;
-  constructor() {}
+  constructor() {
+    console.log('-----------------------------Interval Operator-----------------------------');
+  }
 
   ngOnInit(): void {
     // interval operator is similar to setTimeout, only difference is it emits data from 0 to infinite in every N seconds

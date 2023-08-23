@@ -11,13 +11,11 @@ export class OfComponent implements OnInit, OnDestroy {
   ofOneSubs!: Subscription;
   ofTwoSubs!: Subscription;
 
-  constructor() {}
+  constructor() {
+    console.log('-----------------------------OF Operator---------------------------------');
+  }
 
   ngOnInit(): void {
-    console.log(
-      '-----------------------------OF operator---------------------------------'
-    );
-
     // 'of' operator convers 1 or more non-iterable parameter to Observables.
     // 'of' operator either accepts N number of paramters, or  single object. It should never be iterable
     // converts parameter or Object to Observable

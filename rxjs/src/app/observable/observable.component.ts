@@ -8,17 +8,15 @@ import { Observable } from 'rxjs';
   styleUrls: ['./observable.component.css'],
 })
 export class ObservableComponent implements OnInit {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    console.log('----------------------Observables-------------------------');
+  }
 
   ngOnInit(): void {
-    console.log('----------------------Observables-------------------------');
-
     // this response is returned as observable as http clients returns the response in observable type
-    this.http
-      .get('https://jsonplaceholder.typicode.com/users')
-      .subscribe((response) => {
-        console.log('response ', response);
-      });
+    this.http.get('https://jsonplaceholder.typicode.com/users').subscribe((response) => {
+      console.log('response ', response);
+    });
   }
 
   createCustomObservable() {
