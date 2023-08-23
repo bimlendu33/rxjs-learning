@@ -11,6 +11,7 @@ export class FromEventComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('secondCard', { static: true }) secondCard!: ElementRef;
   @ViewChild('thirdCard', { static: true }) thirdCard!: ElementRef;
   @ViewChild('enterEvent', { static: true }) enterEvent!: ElementRef;
+
   subsOne!: Subscription;
   subsTwo!: Subscription;
   subsThree!: Subscription;

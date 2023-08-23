@@ -41,8 +41,8 @@
   box-shadow: 0 2px 8px 0 rgba(116, 79, 168, 0.75);
 }
 
-.menu-ul:hover {
-  background-color: rgba(0, 0, 128);
+.menu-ul.color-3:hover {
+  box-shadow: 0 8px 15px 0 rgba(116, 79, 168, 0.75);
 }
 
 .menu-items-wrapper a {
