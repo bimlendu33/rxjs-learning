@@ -20,11 +20,40 @@ import { TestComponent } from './components/test/test.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { TakeComponent } from './components/take/take.component';
 import { RetryComponent } from './components/retry/retry.component';
+import { SubjectComponent } from './components/subject/subject.component';
+import { BehaviorSubjectComponent } from './components/behavior-subject/behavior-subject.component';
+import { ReplaySubjectComponent } from './components/replay-subject/replay-subject.component';
+import { SubjectService } from './services/subject.service';
+import { BehaviorSubjectService } from './services/behavior-subject.service';
+import { ReplaySubjectService } from './services/replay-subject.service';
+import { SideOffCanvasComponent } from './components/side-off-canvas/side-off-canvas.component';
 
 @NgModule({
-  declarations: [AppComponent, PromiseComponent, LandingComponent, ObservableComponent, TimerComponent, IntervalComponent, OfComponent, FromComponent, FromEventComponent, ToArrayComponent, MapComponent, TapComponent, PluckComponent, TestComponent, FilterComponent, TakeComponent, RetryComponent],
+  declarations: [
+    AppComponent,
+    PromiseComponent,
+    LandingComponent,
+    ObservableComponent,
+    TimerComponent,
+    IntervalComponent,
+    OfComponent,
+    FromComponent,
+    FromEventComponent,
+    ToArrayComponent,
+    MapComponent,
+    TapComponent,
+    PluckComponent,
+    TestComponent,
+    FilterComponent,
+    TakeComponent,
+    RetryComponent,
+    SubjectComponent,
+    BehaviorSubjectComponent,
+    ReplaySubjectComponent,
+    SideOffCanvasComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [],
+  providers: [SubjectService, BehaviorSubjectService, ReplaySubjectService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

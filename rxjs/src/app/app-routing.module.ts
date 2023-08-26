@@ -16,6 +16,9 @@ import { TestComponent } from './components/test/test.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { TakeComponent } from './components/take/take.component';
 import { RetryComponent } from './components/retry/retry.component';
+import { SubjectComponent } from './components/subject/subject.component';
+import { BehaviorSubjectComponent } from './components/behavior-subject/behavior-subject.component';
+import { ReplaySubjectComponent } from './components/replay-subject/replay-subject.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent, pathMatch: 'full' },
@@ -34,6 +37,9 @@ const routes: Routes = [
   { path: 'filter', component: FilterComponent },
   { path: 'take', component: TakeComponent },
   { path: 'retry', component: RetryComponent },
+  { path: 'subject', component: SubjectComponent },
+  { path: 'behavior-subject', component: BehaviorSubjectComponent },
+  { path: 'replay-subject', component: ReplaySubjectComponent },
   { path: '**', pathMatch: 'full', redirectTo: '/' },
 ];
 

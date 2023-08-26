@@ -1,0 +1,32 @@
+<div class="side-off-wrapper">
+  <button class="expand-button btn btn-primary align-middle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+    <img src="../../../assets/images/left-arrow.png" />
+  </button>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel" class="mb-0">Offcanvas right</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="col-12">
+        <div class="card">
+          <h5 class="card-header">Subject</h5>
+          <div class="card-body">
+            <h5 class="card-title">Subscribed data</h5>
+            <p class="">Data: {{ subjectData | json }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 my-3">
+        <div class="card">
+          <h5 class="card-header">BehaviorSubject</h5>
+          <div class="card-body">
+            <h5 class="card-title">Subscribed data</h5>
+            <p class="">Data: {{ behaviorSubjectData | json }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

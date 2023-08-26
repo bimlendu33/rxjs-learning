@@ -51,7 +51,5 @@ export class TakeComponent implements OnInit {
     });
   }
 
-  stopIt(){
-    
-  }
+  stopIt() {}
 }
